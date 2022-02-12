@@ -3,6 +3,7 @@
  * que estamos trabalhando com rotas dinânmicas
  */
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function buscar(){
 
@@ -16,6 +17,9 @@ export default function buscar(){
     return(
         <div>
             <h1> Rotas / {id} / {nome} </h1>
+            <Link href="/rotas">
+                <button>Voltar</button>
+            </Link>
         </div>
     )
 }

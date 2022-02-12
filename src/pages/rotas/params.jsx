@@ -1,4 +1,5 @@
 import { useRouter } from "next/router"
+import Link from "next/link";
 
 export default function params(){
 
@@ -17,6 +18,10 @@ export default function params(){
     return(
         <div>
             <h1>Rotas Params: {id} e {nome}
+            <Link href="/rotas">
+                <button>Voltar</button>
+            </Link>
+           
 
             </h1>
         </div>
