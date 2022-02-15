@@ -5,7 +5,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-export default function buscar(){
+export default function Buscar(){
 
     const router = useRouter()
 
@@ -17,7 +17,7 @@ export default function buscar(){
     return(
         <div>
             <h1> Rotas / {id} / {nome} </h1>
-            <Link href="/rotas">
+            <Link href="/rotas" passHref>
                 <button>Voltar</button>
             </Link>
         </div>
